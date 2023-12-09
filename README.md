@@ -68,12 +68,15 @@ See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on tr
 
 Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a
 [**Python>=3.7.0**](https://www.python.org/) environment, including
-[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
+[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).We tried to create a python3.11 conda environment for 
+yol5.6.1, however, it didn't work. We already proved that python3.9 works for yolo5.6.1. 
 
 ```bash
-git clone https://github.com/ultralytics/yolov5  # clone
-cd yolov5
-pip install -r requirements.txt  # install
+conda create -n yolo_5.6.1 python=3.9
+conda activate yolo_5.6.1
+git clone https://github.com/haotiangu/yolov5.6.1  # clone
+cd yolov5.6.1
+pip3 install -r requirements.txt  # install
 ```
 
 </details>
